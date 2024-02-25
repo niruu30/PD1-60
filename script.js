@@ -148,10 +148,10 @@ const quizData = [
         isMultiple: false,
         question: "What should a developer use to obtain the Id and Name of all the Leads. Accounts, and Contacts that hove the company name 'Universal Containers'?",
         options: [
-            { letter: "A", text: "FIND 'Universal Containers' IN Name Fields RETURNING lead(id, name), accounted, name), contacted, name)" },
-            { letter: "B", text: "FIND Universal Containers' IN CompanyName Fields RETURNING lead{ld. name), accounted, name), contacted, name)" },
-            { letter: "C", text: "SELECT lead(id, name). accountOd, name), contacted, name) FROM Lead, Account, Contact WHERE Name = 'universal Containers'" },
-            { letter: "D", text: "SELECT Lead.id. Lead.Name, Account.Id, AccountName, Contacted, Contact.Name FROM Lead, Account, Contact WHERE CompanvName * Universal Containers'" }
+            { letter: "A", text: "FIND 'Universal Containers' IN Name Fields RETURNING lead(id, name), account (id, name), contact(id, name)" },
+            { letter: "B", text: "FIND 'Universal Containers' IN CompanyName Fields RETURNING lead(id, name), account (id, name), contact(id, name)" },
+            { letter: "C", text: "SELECT lead(id, name), account (id, name), contact(id, name) FROM Lead, Account, Contact WHERE Name = 'Universal Containers'" },
+            { letter: "D", text: "SELECT Lead.Id, Lead.Name, Account.Id, Account.Name, Contact.Id, Contact.Name FROM Lead, Account, Contact WHERE CompanyName = 'Universal Containers'" }
         ],
         answer: "A"
     },
@@ -2138,7 +2138,7 @@ const quizData = [
             { letter: "C", text: "Any user with a higher role in the hierarchy." },
             { letter: "D", text: "An administrator." }
         ],
-        answer: ["B", "C"]
+        answer: ["B", "D"]
     },
     {
         id: "q174",
@@ -2456,13 +2456,13 @@ const quizData = [
     },
     {
         id: "q200",
-        isMultiple: true,
+        isMultiple: false,
         question: "In a single record, a user selects multiple values from a multi-select picklist. How are the selected values represented in Apex?",
         options: [
-            { letter: "A", text: "As a List<String> with each value as an element in the list" },
+            { letter: "A", text: "As a List&ltString&gt with each value as an element in the list" },
             { letter: "B", text: "As a String with each value separated by a comma" },
             { letter: "C", text: "As a String with each value separated by a semicolon" },
-            { letter: "D", text: "As a Set<String> with each value as an element in the set" }
+            { letter: "D", text: "As a Set&ltString&gt with each value as an element in the set" }
         ],
         answer: "C"
     },
