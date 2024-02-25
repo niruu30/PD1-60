@@ -812,7 +812,7 @@ const quizData = [
     {
         id: "q68",
         isMultiple: true,
-        question: "What are two ways a developer can get the status of an enquered job for a class that queueable interface? Choose 2 answers.",
+        question: "What are two ways a developer can get the status of an enqeued job for a class that queueable interface? Choose 2 answers.",
         options: [
             { letter: "A", text: "View the apex Jobs page" },
             { letter: "B", text: "View the apex status Page" },
@@ -824,7 +824,7 @@ const quizData = [
     {
         id: "q69",
         isMultiple: true,
-        question: "A developer is tasked to perform a security review of the ContactSearch Apex class that exists in the system. Within the class, the developer identifies the following method as a security threat: List&ltContact&gt performSearch(String lastName){ return Database.query('Select Id, FirstName, LastName FROM Contact WHERE LastName Like %'+lastName+'%); } What are two ways the developer can update the method to prevent a SOQL injection attack? Choose 2 answers",
+        question: "A developer is tasked to perform a security review of the ContactSearch Apex class that exists in the system. Within the class, the developer identifies the following method as a security threat: List<Contact> performSearch(String lastName){ return Database.query('Select Id, FirstName, LastName FROM Contact WHERE LastName Like %'+lastName+'%); } What are two ways the developer can update the method to prevent a SOQL injection attack? Choose 2 answers",
         options: [
             { letter: "A", text: "Use the escapeSingleQuote method to sanitize the parameter before its use." },
             { letter: "B", text: "Use variable binding and replace the dynamic query with a static SOQL." },
@@ -836,7 +836,7 @@ const quizData = [
     {
         id: "q70",
         isMultiple: true,
-        question: "When a user edits the postal Code on an Account, a custom Account text field named. 'Timezone' must be updated based on the values in a PostalCodeToTimezone_c custom ogject. Which two automationtools can be used to implement this feature? Choose 2 answers",
+        question: "When a user edits the postal Code on an Account, a custom Account text field named. 'Timezone' must be updated based on the values in a PostalCodeToTimezone_c custom object. Which two automationtools can be used to implement this feature? Choose 2 answers",
         options: [
             { letter: "A", text: "Quick actions" },
             { letter: "B", text: "Account trigger" },
@@ -913,7 +913,7 @@ const quizData = [
         question: "Which three steps allow a custom SVG to be included in a Lightning web component? Choose 3 answers",
         options: [
             { letter: "A", text: "Import the SVG as a content asset file." },
-            { letter: "B", text: "Import the static resource and provide a better for it in JavaScript." },
+            { letter: "B", text: "Import the static resource and provide a getter for it in JavaScript." },
             { letter: "C", text: "Reference the getter in the HTML template." },
             { letter: "D", text: "Reference the import in the HTML template." },
             { letter: "E", text: "Upload the SVG as a static resource." }
@@ -1302,7 +1302,7 @@ const quizData = [
     {
         id: "q108",
         isMultiple: false,
-        question: "A PrimaryId_c custom field exists on the candidate_c custom object. The filed is used to store each candidate's id number and is marked as Unique in the schema definition. As part of a data enrichment process. Universal Containers has a CSV file that contains updated data for all candidates in the system, f he file contains each Candidate's primary id as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload?",
+        question: "A PrimaryId_c custom field exists on the candidate_c custom object. The filed is used to store each candidate's id number and is marked as Unique in the schema definition. As part of a data enrichment process. Universal Containers has a CSV file that contains updated data for all candidates in the system, the file contains each Candidate's primary id as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload?",
         options: [
             { letter: "A", text: "A Update the PrimaryId_c field definition to mark it as an External Id." },
             { letter: "B", text: "Create a before Insert trigger to correctly map the records." },
@@ -1666,7 +1666,7 @@ const quizData = [
         id: "q137",
         isMultiple: true,
         imageUrl: "pics/img16.png",
-        question: "Assuming that name is 8 String obtained by an <apex:inputText> tag on 8 Visualforce page, which two SOQL queries performed are safe from SOQL injection? Choose 2 answers.",
+        question: "Assuming that name is a String obtained by an <apex:inputText> tag on a Visualforce page, which two SOQL queries performed are safe from SOQL injection? Choose 2 answers.",
         options: [
             { letter: "A", text: "Option A" },
             { letter: "B", text: "Option B" },
@@ -1676,7 +1676,7 @@ const quizData = [
         answer: ["C", "D"]
     },
     {
-        id: "q136",
+        id: "q138",
         isMultiple: false,
         imageUrl: "pics/img17.png",
         question: "An Apex method, getAccounts, that returns a list of Accounts given a searchTern, is available for Lightning Web Components to use. What is the correct definition of a Lightning Web Component property that uses the getAccounts method?",
@@ -1689,7 +1689,7 @@ const quizData = [
         answer: "D"
     },
     {
-        id: "q137",
+        id: "q139",
         isMultiple: false,
         imageUrl: "pics/img18.png",
         question: "Which Lightning code segment should be written to declare dependencies on a Lightning component, c:accountList, that is used in a Visualforce page?",
@@ -1702,7 +1702,7 @@ const quizData = [
         answer: "A"
     },
     {
-        id: "q138",
+        id: "q140",
         isMultiple: false,
         imageUrl: "pics/img19.png",
         question: "A developer needs to implement a custom SOAP Web Service that is used by an external Web Application. The developer chooses to Include helper methods that are not used by the Web Application In the Implementation of the Web Service Class. Which code segment shows the correct declaration of the class and methods?",
@@ -1715,7 +1715,7 @@ const quizData = [
         answer: "C"
     },
     {
-        id: "q139",
+        id: "q141",
         isMultiple: false,
         imageUrl: "pics/img20.png",
         question: "Which option would a developer use to display the Accounts created in the current week and the number of related Contacts using a debug statement in Apex?",
@@ -1726,29 +1726,6 @@ const quizData = [
             { letter: "D", text: "Option D" }
         ],
         answer: "A"
-    },
-    {
-        id: "q140",
-        isMultiple: false,
-        question: "A visualforce interface is created for Case Management that includes both standard and custom functionality defined in an Apex class called myControllerExtension. The visualforce page should include which <apex:page> attribute(s) to correctly implement controller functionality?", options: [
-            { letter: "A", text: "Controller = 'case' and extensions =' myControllerExtension'" },
-            { letter: "B", text: "StandardController = 'case' and extensions =' myControllerExtension'" },
-            { letter: "C", text: "Extensions=' myControllerExtension'" },
-            { letter: "D", text: "Controller=' myControllerExtension'" }
-        ],
-        answer: "B"
-    },
-    {
-        id: "q141",
-        isMultiple: false,
-        question: "What is the advantage of Salesforce Lightning?",
-        options: [
-            { letter: "A", text: "Option 3" },
-            { letter: "B", text: "Pre-defined components to give Standard Look and Feel" },
-            { letter: "C", text: "Option 4" },
-            { letter: "D", text: "Uses service side for better handling" }
-        ],
-        answer: "B"
     },
     {
         id: "q142",
@@ -1820,7 +1797,7 @@ const quizData = [
             { letter: "A", text: "Create an apex helper class for the SOQL" },
             { letter: "B", text: "Add a group by clause to the contact SOQL" },
             { letter: "C", text: "Put the account loop inside the contact loop" },
-            { letter: "D", text: "Use a map &ltiId,Contact&gt for allaccounts" }
+            { letter: "D", text: "Use a map &ltId,Contact&gt for allaccounts" }
         ],
         answer: "D"
     },
@@ -1878,7 +1855,7 @@ const quizData = [
     {
         id: "q152",
         isMultiple: false,
-        question: "Account acct = {SELECT Id from Account limit 1}; Given the code above, how can a developer get the type of object from acct?",
+        question: "Account acct = [SELECT Id from Account limit 1]; Given the code above, how can a developer get the type of object from acct?",
         options: [
             { letter: "A", text: "Call 'acct.getsObjectType()'" },
             { letter: "B", text: "Call 'Account.SobjectType'" },
@@ -1945,7 +1922,7 @@ const quizData = [
             { letter: "C", text: "Flow builder" },
             { letter: "D", text: "Workflows" }
         ],
-        answer: ["A", "C"]
+        answer: ["B", "C"]
     },
     {
         id: "q158",
@@ -2219,7 +2196,7 @@ const quizData = [
         options: [
             { letter: "A", text: "Switch to a production database" },
             { letter: "B", text: "Scale your dynos" },
-            { letter: "C", text: "Insure that you have installed a performance introspection add-on" },
+            { letter: "C", text: "Ensure that you have installed a performance introspection add-on" },
             { letter: "D", text: "Run the production check feature via the web interface" }
         ],
         answer: "D"
@@ -2362,8 +2339,8 @@ const quizData = [
         isMultiple: true,
         question: "Which two platform features align to the Controller portion of MVC architecture? (Choose two.)",
         options: [
-            { letter: "A", text: "Process Builder actions M" },
-            { letter: "B", text: "Workflow rules Mo" },
+            { letter: "A", text: "Process Builder actions" },
+            { letter: "B", text: "Workflow rules" },
             { letter: "C", text: "Standard objects" },
             { letter: "D", text: "Date fields" }
         ],
@@ -2465,5 +2442,28 @@ const quizData = [
             { letter: "D", text: "As a Set&ltString&gt with each value as an element in the set" }
         ],
         answer: "C"
+    },
+    {
+        id: "q201",
+        isMultiple: false,
+        question: "A visualforce interface is created for Case Management that includes both standard and custom functionality defined in an Apex class called myControllerExtension. The visualforce page should include which <apex:page> attribute(s) to correctly implement controller functionality?", options: [
+            { letter: "A", text: "Controller = 'case' and extensions =' myControllerExtension'" },
+            { letter: "B", text: "StandardController = 'case' and extensions =' myControllerExtension'" },
+            { letter: "C", text: "Extensions=' myControllerExtension'" },
+            { letter: "D", text: "Controller=' myControllerExtension'" }
+        ],
+        answer: "B"
+    },
+    {
+        id: "q202",
+        isMultiple: false,
+        question: "What is the advantage of Salesforce Lightning?",
+        options: [
+            { letter: "A", text: "Option 3" },
+            { letter: "B", text: "Pre-defined components to give Standard Look and Feel" },
+            { letter: "C", text: "Option 4" },
+            { letter: "D", text: "Uses service side for better handling" }
+        ],
+        answer: "B"
     },
 ];
