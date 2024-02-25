@@ -2299,7 +2299,7 @@ const quizData = [
     },
     {
         id: "q187",
-        isMultiple: false,
+        isMultiple: true,
         question: "Where can debug log filter settings be set?Choose 2 answers",
         options: [
             { letter: "A", text: "On the monitored user's name." },
