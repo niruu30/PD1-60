@@ -1,5 +1,5 @@
 const quizData = [
-    /*{
+    {
         id: "q1",
         isMultiple: false,
         question: "Universal Containers wants to back up all of the data and attachments in its Salesforce org once month. Which approach should a developer use to meet this requirement?",
@@ -2428,7 +2428,7 @@ const quizData = [
             { letter: "D", text: "Use a private Boolean variable." }
         ],
         answer: "B"
-    },*/
+    },
     {
         id: "q198",
         isMultiple: true,
@@ -2464,6 +2464,6 @@ const quizData = [
             { letter: "C", text: "As a String with each value separated by a semicolon" },
             { letter: "D", text: "As a Set<String> with each value as an element in the set" }
         ],
-        answer: ["", ""]
+        answer: "C"
     },
 ];
